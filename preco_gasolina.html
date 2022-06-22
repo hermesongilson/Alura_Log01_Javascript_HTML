@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+<p>Exercício de Função: Calculo %, exibe. <br>
+   Exercìcio de Confição: if/else - Comados: alert, prompt, return. </p>
+<hr>
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function exibe(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calcPorcentagemCombustivel() {
+        return (precoAlcool / precoGasolina) * 100;
+    }
+
+    alert ("Bem-vindo");
+    var nomeUsuario = prompt("Para começarmos, digite por gentileza o seu nome!");
+    var precoAlcool = prompt(" Olá " + nomeUsuario + ". Por favor, digite o valor do álcool: ");
+    var precoGasolina = prompt("Agora " + nomeUsuario + ", digite o valor da gasolina: ");
+    var decisao = null;
+
+    precoAlcool = precoAlcool.replace(',', '.');
+    precoGasolina = precoGasolina.replace(',', '.');
+
+    var porcentagemCombustivel = calcPorcentagemCombustivel(precoAlcool, precoGasolina).toFixed(2);
+
+    if(porcentagemCombustivel <= 70) {
+        var decisao = 'é aconselhável o abastecimento com álcool!';    
+    }
+    else {
+        var decisao = 'não é aconselhável o abastecimento com álcool!';    
+    }
+
+    exibe(nomeUsuario);
+    exibe("Com os valores apresentados, o álcool está representando " + porcentagemCombustivel + "% do valor da gasolina.");
+    exibe("Segundo especialistas, se o valor do álcool estiver correspondendo a, até 70% do valor da gasolina é viável o abastecimento com álcool, caso contrário, não! Portanto com os valores apresentados " + decisao);
+
+</script>    
