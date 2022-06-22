@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+<p> Exercício Função: parseInt, prompt, mostra, pulaLinha - Condição if/else.
+<hr>
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var quantidadeCarbono1 = parseInt(prompt("Quantidade de carbono substância 1"));
+    var quantidadeCarbono2 = parseInt(prompt("Quantidade de carbono substância 2"));
+
+
+    quantidadeCarbono2 = quantidadeCarbono2 + 2;
+    
+    mostra("A quantidade de cabono da substância 01: " + quantidadeCarbono1);
+    mostra("Já na substância 02 adicionado + 2 fica: " + quantidadeCarbono2);
+    pulaLinha();
+
+    if(quantidadeCarbono1 == quantidadeCarbono2 ) {
+
+        mostra("Acho que são substâncias parecidas");
+    } else {
+
+        mostra("São substâncias bem diferentes");
+    }
+
+</script>
