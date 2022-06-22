@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<p>Exercício de Condição: qntCopa, anoCopa,limite, repetição: while, Incremento.</p><br>
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var anoCopa = 1930;
+    var limite = parseInt(prompt("Qual é o ano limite?"));
+    var qntCopa = 0;
+
+    while(anoCopa <= limite) {
+        mostra(anoCopa + " tem copa!");
+        anoCopa = anoCopa + 4;
+        qntCopa = qntCopa + 1;
+    }
+    pulaLinha();
+    mostra("Quantidade de copas que teve até o ano de " + limite + " : Foram "+ qntCopa + " Copas");
+    mostra("Ufa! Esses foram os anos de copa até " + limite);
+</script>
