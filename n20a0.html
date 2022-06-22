@@ -1,0 +1,18 @@
+<meta charset="UTF-8">
+<p> Exercício de Condição e Repetição: while, contador, decremento.
+<br> Exercício mostra números de 20 na ordem descrente, inserindo uma linha entre os números.</p> <hr><br>
+<script>
+    function pulaLinha() {
+        document.write("<br><hr>");
+    }
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+    var contador = 20;
+    while (contador>=0) {
+        mostra(contador);
+        contador = contador - 1;
+    }
+        mostra("FIM");
+</script>
