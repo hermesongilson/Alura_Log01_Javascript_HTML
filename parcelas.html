@@ -1,0 +1,16 @@
+<meta charset="UTF-8">
+<p>Exercício de Arrays, For, parcela.length, metodo: to.Fixed(n)soma atribuição "+=" </p><hr>
+<script>
+    var parcelas = [10.40, 40.00, 100.18, 200];
+    var somaParcela = 0;
+    for(var i = 0; i < parcelas.length; i = i + 1) {
+        document.write(parcelas[i].toFixed(2));
+        somaParcela += parcelas[i];
+        ValorTotal = somaParcela.toFixed(2);
+        document.write("<br>");
+    }
+        document.write("<hr>");
+        document.write("Soma das parcelas: " + ValorTotal);
+        document.write("<br>");
+        document.write("FIM");
+</script>

@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<p> Exercício de Função: exibeTexto, Inserir texto, alert. 
+<br>Botão Exibir Texto - Botão Atualizar.</p>
+<hr>
+<input/>
+<button>Exibir texto digitado</button>
+<button id="refresh">Clique para atualizar</button>
+
+<script>
+    var input = document.querySelector("input");
+    var btn = document.querySelector("#refresh");
+
+    btn.addEventListener("click", function() {
+    location.reload();
+    });
+    function exibeTexto(frase) {
+        alert(input.value);
+    }
+    var button = document.querySelector("button");
+    button.onclick = exibeTexto;
+</script>
